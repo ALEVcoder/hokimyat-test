@@ -1,0 +1,233 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Oqdaryo Tuman Hokimyati
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'assets/fontawesome/css/all.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    {% if logo %}
+    <link rel="icon" href="{{logo.rasmi.url}}">
+    {% endif %}
+    </head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="heading-wrapper">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="info">
+                            <i class="icon ion-ios-location-outline"></i>
+                            <div class="right-area">
+                                <h5>Samarqand Viloyat Oqdaryo tuman</h5>
+                                <!-- <h5>Loyish Ko`cha</h5> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="info">
+                            <i class="icon ion-ios-telephone-outline"></i>
+                            <div class="right-area">
+                                <h5>+998 93 998 8903</h5>
+                                <h6>9:00 dan 18:00 gacha</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="info">
+                            <i class="icon ion-ios-chatboxes-outline"></i>
+                            <div class="right-area">
+                                <h5><a href="#" class="__cf_email__" data-cfemail="fb9894958f9a988fbb9894979489979299d5989496">sardorluqmonov@gmail.com</a></h5>
+                                <h6>24/07 Online</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="downlad-btn" href="{% static 'assets/info/Лукмонов Сардор.doc' %}">Ko`proq ma`lumotni yuklash</a>
+        </div>
+    </header>
+    <section class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1 col-lg-2"></div>
+                <div class="col-md-10 col-lg-8">
+                    <div class="intro">
+                        <div class="profile-img"><img src="{% static 'images/admin.png' %}" alt=""></div>
+                        <h2><b>Luqmonov Sardor Ikromovich</b></h2>
+                        <h4 class="font-yellow">Yoshlar ishlari bo`yicha hokim o`rin bosari</h4>
+                        <ul class="information margin-tb-30">
+                            <li><b>Tug`ilgan : </b>03.03.1989</li>
+                            <li><b>EMAIL : </b><a href="#" class="__cf_email__" data-cfemail="e4899d898d908ca4899d93818694858381ca878b89">sardorluqmonov@gmail.com</a></li>
+                            <li><b>Ma`lumoti : </b>OLIY</li>
+                        </ul>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                            <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-telegram"></i></a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="heading">
+                        <h3><b>Arizalaringiz yoki Rahmat nomalaringiz yuboring</b></h3>
+                        <h6 class="font-lite-black"><b></b></h6>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <div class="container">
+            <form action="#" method="POST">
+                {% csrf_token %}
+                <div class="form-row">
+                   <div class="input-data">
+                      <input type="text" name="user" required>
+                      <div class="underline"></div>
+                      <label for="">Ismingiz</label>
+                   </div>
+                   <div class="input-data">
+                      <input type="text" name="last" required>
+                      <div class="underline"></div>
+                      <label for="">Familyangiz</label>
+                   </div>
+                </div>
+                <div class="form-row">
+                   <div class="input-data">
+                      <input type="text" name="pochta" required>
+                      <div class="underline"></div>
+                      <label for="">Nomeringiz</label>
+                   </div>
+                   <div class="input-data">
+                      <input type="text" name="local" required>
+                      <div class="underline"></div>
+                      <label for="">Qayerdansiz</label>
+                   </div>
+                </div>
+                <div class="form-row">
+                <div class="input-data textarea">
+                   <textarea rows="8" cols="80" name="xabar" required></textarea>
+                   <br />
+                   <div class="underline"></div>
+                   <label for="">Arizangizni yozing...</label>
+                   <br />
+                   <div class="form-row submit-btn">
+                      <div class="input-data">
+                         <div class="inner"></div>
+                         <input type="submit" value="Yuborish">
+                      </div>
+                   </div>
+             </form>
+        </div>
+    </section>
+    <br><br>
+    <br><br>
+    <br><br>
+  
+    <section class="portfolio-section section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="heading">
+                        <h3><b>Yangiliklar</b></h3>
+                        <h6 class="font-lite-black"><b></b></h6>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="news">
+                {% for i in news %}
+                <div class="blog-post">
+                    <div class="blog-post__img">
+                        <img src="{{i.rasmi.url}}" alt="oqdaryo_hokimyati">
+                    </div>
+                    <div class="blog-post__info">
+                        <div class="blog-post__date">
+                            <span>{{i.kun}}</span>
+                            <span>{{i.sana}}</span>
+                        </div>
+                        <h1 class="blog-post__title">{{i.nomi}}</h1>
+                        <p class="blog-post__text"> 
+                            {{i.malumot}} 
+                        </p>
+                        <a href="{{i.telegram}}" class="blog-post__cta">Ko`proq</a>
+                    </div>            
+                </div>
+                <br><br><br>
+                <br><br><br>
+                {% endfor %}
+            </div>
+            
+            <br>
+            <br>
+        </div>
+
+    </section>
+   
+    <footer>
+        <div class="col text-center" style="background-color: #ffad01;">
+            <br>
+            <hr>
+           
+			<p style="color: black;   font-weight: bold;">  Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+				by <a href="https://t.me/Bekzodxon_Abduvaitov" target="_blank"> Oqdaryo_Developers</a> <br><i class="fa fa-map-marker"></i> <a target="_blank" href="https://t.me/Oqdaryo_IT_PARK">Oqdaryo-IT_PARK</a> </p>
+                <br>
+                <br>
+		</div>
+    </footer>
+
+    <script src="{% static 'common-js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'common-js/tether.min.js' %}"></script>
+    <script src="{% static 'common-js/bootstrap.js' %}"></script>
+    <script src="{% static 'common-js/isotope.pkgd.min.js+jquery.waypoints.min.js+progressbar.min.js+jquery.fluidbox.min.js+scripts.js.pagespeed.jc.9Pm3Vx--mG.js' %}"></script>
+    <script>
+        eval(mod_pagespeed_c1zmmXJ4$R);
+    </script>
+    <script>
+        eval(mod_pagespeed_yu8C2OtpiI);
+    </script>
+    <script>
+        eval(mod_pagespeed_RxhYnZjBKa);
+    </script>
+    <script>
+        eval(mod_pagespeed_FiXB1FkK3F);
+    </script>
+    <script>
+        eval(mod_pagespeed_2srAC6686o);
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"67c9dba8cedf005f","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.7.0","si":10}'></script>
+</body>
+
+</html>
